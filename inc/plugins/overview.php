@@ -46,6 +46,7 @@ if (defined('THIS_SCRIPT'))
 // AJAX hook.
 $plugins->add_hook("xmlhttp", "overview_ajax");
 
+global $mybb;
 if (!$mybb->settings['overview_noindex'])
 {
     $plugins->add_hook("index_end", "overview_end");
